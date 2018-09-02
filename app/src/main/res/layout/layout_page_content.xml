@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="130dp"
+        android:layout_height="134dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_logo_github" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/page_state_layout"
+        android:textColor="@color/color333"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/success_msg"
+        android:textColor="@color/color666"
+        android:textSize="18sp" />
+
+</RelativeLayout>
