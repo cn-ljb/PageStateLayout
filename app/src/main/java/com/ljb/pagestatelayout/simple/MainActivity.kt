@@ -12,6 +12,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         btn_def_style.setOnClickListener { goDefStylePage() }
         btn_custom_style.setOnClickListener { goCustomStylePage() }
+        btn_code_style.setOnClickListener { goCodeStylePage() }
+    }
+
+    private fun goCodeStylePage() {
+        startActivity(Intent(this, CodeStyleActivity::class.java))
     }
 
     private fun goCustomStylePage() {

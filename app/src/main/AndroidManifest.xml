@@ -19,6 +19,7 @@
 
         <activity android:name=".DefStyleActivity" />
         <activity android:name=".CustomStyleActivity" />
+        <activity android:name=".CodeStyleActivity" />
     </application>
 
 </manifest>
