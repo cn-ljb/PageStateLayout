@@ -17,5 +17,11 @@
         style="@style/HomeStyleBtn"
         android:text="@string/custom_style" />
 
+    <Button
+        android:id="@+id/btn_code_style"
+        style="@style/HomeStyleBtn"
+        android:text="@string/code_style"
+        android:textAllCaps="false" />
+
 
 </LinearLayout>

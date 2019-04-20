@@ -6,4 +6,5 @@
     <string name="reload">点击重试</string>
     <string name="page_state_layout">PageStateLayout</string>
     <string name="success_msg">~ 这是成功界面 ~</string>
+    <string name="code_style">Code样式</string>
 </resources>
