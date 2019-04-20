@@ -3,6 +3,7 @@ package com.ljb.pagestatelayout.simple
 import android.app.Activity
 import android.os.Bundle
 import android.util.Log
+import com.ljb.page.PageState
 import com.ljb.page.PageStateLayout
 import com.ljb.pagestatelayout.simple.utils.RxUtils
 import io.reactivex.Observable
@@ -37,13 +38,13 @@ class DefStyleActivity : Activity() {
     private fun changePage(num: Int) {
         Log.i("pageState", "num = $num")
         val pageState = if (num % 2 == 0) {
-            PageStateLayout.PageState.STATE_LOADING
+            PageState.STATE_LOADING
         } else {
             when (num) {
-                1 -> PageStateLayout.PageState.STATE_SUCCESS
-                3 -> PageStateLayout.PageState.STATE_EMPTY
-                5 -> PageStateLayout.PageState.STATE_ERROR
-                else -> PageStateLayout.PageState.STATE_LOADING
+                1 -> PageState.STATE_SUCCESS
+                3 -> PageState.STATE_EMPTY
+                5 -> PageState.STATE_ERROR
+                else -> PageState.STATE_LOADING
             }
         }
         page_layout.setPage(pageState)

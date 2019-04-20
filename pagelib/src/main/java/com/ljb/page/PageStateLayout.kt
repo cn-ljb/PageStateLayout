@@ -20,25 +20,6 @@ import com.ljb.page.utils.DipUtils
  */
 class PageStateLayout : FrameLayout {
 
-    enum class PageState {
-        /**
-         * 正在加载状态
-         */
-        STATE_LOADING,
-        /**
-         * 错误状态
-         */
-        STATE_ERROR,
-        /**
-         * 空数据状态
-         */
-        STATE_EMPTY,
-        /**
-         * 成功状态
-         */
-        STATE_SUCCESS
-    }
-
 
     private var mCurPageState = PageState.STATE_LOADING
     private var mLoadingResId: Int = -1
