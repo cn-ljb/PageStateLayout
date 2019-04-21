@@ -2,7 +2,23 @@
 
 一款简单的页面切换布局组件
 
-## 使用
+## 集成方式
+
+> * 1、Project的**build.gradle**文件添加如下代码：
+
+	allprojects {
+	    repositories {
+	      	...
+	        maven { url 'https://jitpack.io' }
+	    }
+	}
+
+> * 2、主Module的**build.gradle**添加依赖：
+
+    //page layout
+    implementation 'com.github.cn-ljb:PageStateLayout:1.0.0'
+
+## 代码示例
 
 * layout.xml中使用
 
@@ -31,10 +47,15 @@
 
 * pageState取值
 
-		PageStateLayout.PageState.STATE_SUCCESS -> 成功页面 
-		PageStateLayout.PageState.STATE_EMPTY -> 空页面 
-		PageStateLayout.PageState.STATE_ERROR -> 错误页面 
-		PageStateLayout.PageState.STATE_LOADING -> 加载页面 
+		PageState.STATE_SUCCESS -> 成功页面 
+		PageState.STATE_EMPTY -> 空页面 
+		PageState.STATE_ERROR -> 错误页面 
+		PageState.STATE_LOADING -> 加载页面 
+
+## 演示
+
+![page_layout.gif](https://upload-images.jianshu.io/upload_images/6656959-4dbed78eaf0253a7.gif?imageMogr2/auto-orient/strip)
+
 
 		
  		
